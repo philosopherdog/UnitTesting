@@ -7,7 +7,7 @@ final class MockUserDefaults: UserDefaultsProtocol {
   static var timesInitialized = 0
   
   init() {
-    MockUserDefaults.timesInitialized += 1
+    type(of: self).timesInitialized += 1
   }
   
   var values: [String: Data] = [:]

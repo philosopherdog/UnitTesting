@@ -1,6 +1,6 @@
 import Foundation
 
-final class Bill {
+class Bill {
   
   internal var amount = 0.0
   

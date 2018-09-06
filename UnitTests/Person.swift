@@ -3,7 +3,7 @@ import Foundation
 /// Person model object that knows how to encode/decode
 
 
-final class Person: NSObject, NSCoding {
+class Person: NSObject, NSCoding {
   
   // MARK: Properties
   
@@ -38,7 +38,7 @@ final class Person: NSObject, NSCoding {
   
   // MARK: Designated Initializer
   
-  internal init(firstName: String, lastName: String) {
+  internal init(firstName: String = "", lastName: String = "") {
     self.firstName = firstName
     self.lastName = lastName
   }
